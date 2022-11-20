@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body{
+    background-color: #121212;
+    font-family: 'Rubik', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    height: 55px;
+    background-color: rgb(24, 23, 23);
+    color: white;
+    list-style: none;
+}
+nav img{
+    height: 48px;
+    padding: 0 3px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+nav ul li{
+    margin:17px;
+    padding: 18px;
+}
+.bottom{
+    position: sticky;
+    height: 104px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    bottom: 0;
+}
+.icons{
+    margin-top:12px;
+}
+.icons i{
+    cursor: pointer;
+}
+.container{
+    min-height: 80vh;
+    background-color: black;
+    display: flex;
+    width: 75%;
+    margin: 23px auto;
+    border-radius: 13px;
+    color: white;
+    background-image: url('/img/bg.jpg');
+    background-size: cover;
+    padding: 23px;
+    align-items: flex-start;
+}
+.containers{
+    max-height: 100vh;
+    max-width: 80vh;
+    background-color: black;
+    width: 75%;
+    margin: 3vw auto;
+    border-radius: 13px;
+    color: white;
+    background-size: cover;
+    padding: 13vw;
+    align-items: flex-start;
+}
+.bottom #myProgressBar{
+    width: 88vw;
+    cursor: pointer;
+}
+.songItem{
+    height: 55px;
+    width: 180%;
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 23px;
+    max-width: 40vw;
+}
+.songItem img{
+    max-width: 47px;
+    margin:0 -44px;
+    border-radius: 43px;
+}
+.nav-link{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+.timestamp{
+   margin: 0px 7px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 52px;
+}
+.songInfo{
+    position: absolute;
+    left: 12vh;
+
+}
+.songInfo img{
+    width: 50px;
+    opacity: 0;
+    transition: opacity is 0.04s ease-in;
+
+}
+@media (max-width: 390px) {
+    .songItem{
+        max-width: 33vh;
+        font-size: 12px;
+    }
+    .songItem img{
+        margin: 44vh 0;;
+    }
+    .songInfo{
+        position: absolute;
+        bottom: 10vh;
+        left: -4vh;
+        font-size:12px ;
+    }
+    .icons {
+        position: absolute;
+        top: 3vh;
+        margin: 8vw 5vh;
+    }
+    .bottom{
+        min-height: 54vw;
+    }
+    .container{
+       min-height: 8vh;
+       background-image: url('/img/bg.jpg');
+       background-size:cover;
+    }
+    #myProgressBar{
+        margin-bottom: 20vh;
+    }
+  }
