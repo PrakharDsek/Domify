@@ -2,7 +2,7 @@ console.log("Welcome to Spotify");
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('songs/1.mp3');
+let audioElement = new Audio('1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -10,13 +10,13 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Shubh - Baller", filePath: "songs/1.mp3", coverPath: "img/Cover1.jfif"},
-    {songName: "Shubh - No Love", filePath: "songs/2.mp3", coverPath: "img/Cover2.jfif"},
-    {songName: "Dhruv - Greatfull", filePath: "songs/3.mp3", coverPath: "img/Cover3.jfif"},
-    {songName: "Dhruv - Vulunerable", filePath: "songs/4.mp3", coverPath: "img/Cover4.jfif"},
-    {songName: "Dhruv - Airplane Thought", filePath: "songs/5.mp3", coverPath: "img/Cover5.jfif"},
-    {songName: "Dhruv - Moonlight", filePath: "songs/1.mp3", coverPath: "img/Cover6.jfif"},
-    {songName: "NCS   - Dandelions", filePath: "songs/4.mp3", coverPath: "img/Cover7.jfif"}
+    {songName: "Shubh - Baller", filePath: "songs/1.mp3", coverPath: "Cover1.jfif"},
+    {songName: "Shubh - No Love", filePath: "songs/2.mp3", coverPath: "Cover2.jfif"},
+    {songName: "Dhruv - Greatfull", filePath: "songs/3.mp3", coverPath: "Cover3.jfif"},
+    {songName: "Dhruv - Vulunerable", filePath: "songs/4.mp3", coverPath: "Cover4.jfif"},
+    {songName: "Dhruv - Airplane Thought", filePath: "songs/5.mp3", coverPath: "Cover5.jfif"},
+    {songName: "Dhruv - Moonlight", filePath: "songs/1.mp3", coverPath: "Cover6.jfif"},
+    {songName: "NCS   - Dandelions", filePath: "songs/4.mp3", coverPath: "Cover7.jfif"}
 ]
 
 songItems.forEach((element, i)=>{ 
